@@ -741,6 +741,96 @@ img {
   height: 11px;
 }
 
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+ 
+.form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  margin: 2px 40px 12px 40px;
+  display: flex;
+  justify-content: center;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+.form-terms {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-top: 20px;
+  margin-bottom: 30px;
+  
+  }
+
+.form-field textarea {
+  height: 120px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.form-field input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-field textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+  }
+
+.button.submit {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding: 10px 55px;
+
+  font-family: Roboto;
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
 /* Подвал */
 .footer {
   background-color: #2f303a;
@@ -837,4 +927,14 @@ img {
 .footer-media-icon:focus {
   background-color: var(--accent-color);
   fill: var(--primary-bg-color);
+}
+
+.footer-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-form {
+  display: flex;
+  
 }

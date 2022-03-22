@@ -479,23 +479,32 @@
               <use href="./images/symbol-defs.svg#icon-Cross"></use>
             </svg>
           </button>
-          <div role="group">
-            <p>Оставьте свои данные, мы вам перезвоним</p>
+          <!-- <div role="group" class="modal-form"> -->
+            <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+            <div class="form-field">
             <label for="name">Имя</label>
             <input type="text" name="name" id="name">
+            </div>
+            <div class="form-field">
             <label for="tel">Телефон</label>
             <input type="tel" name="tel" id="tel">
+            </div>
+            <div class="form-field">
             <label for="mail">Почта</label>
             <input type="email" name="mail" id="mail">
+            </div>
+            <div class="form-field">
             <label for="comment">Комментарий</label>
-            <textarea type="comment" id="comment" placeholder="Введите текст" rows="10" autocomplete="off"></textarea>
+            <textarea type="comment" id="comment" placeholder="Введите текст" autocomplete="off"></textarea>
             </div>  
+            <div class="form-terms">
             <input type="checkbox" name="terms" value="terms" id="terms">
             <label for="terms">
               Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
             </label>
-            <button type="submit">Отправить</button>
-        </div>
+            </div>
+            <button type="submit" class="button submit">Отправить</button>
+          <!-- </div> -->
       </div>
     </main>
 
@@ -583,12 +592,12 @@
           </ul>
         </div>
         <!-- Подписка на рассылку -->
-        <div>
-          <form autocomplete="on">
+        <div class="footer-form">
+          <form autocomplete="on" class="footer-input">
             <label for="email">Подпишитесь на рассылку</label>
             <input type="email" name="email" id="email" placeholder="E-mail"></input>
-            <button type="submit">Подписаться</button>
             </form>
+            <button type="submit">Подписаться</button>
         </div>
       </div>
     </footer>
