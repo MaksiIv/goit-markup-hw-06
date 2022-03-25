@@ -739,6 +739,8 @@ img {
 .modal-icon {
   width: 11px;
   height: 11px;
+
+  transition: fill 250ms var(--timing-function);
 }
 
 .button-modal:hover .modal-icon,
@@ -777,7 +779,13 @@ img {
 
   top: 50%;
   left: 12px;
+
+  transition: fill 250ms var(--timing-function);
 }  
+
+.form-input {
+  transition: border-color 250ms var(--timing-function);
+}
 
 .form-field:focus-within .form-icon {
   fill: var(--accent-color);
@@ -882,6 +890,9 @@ img {
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
+
+  transition: background-color 250ms var(--timing-function),
+   border-color 250ms var(--timing-function);
 }
 
 .button.submit {
