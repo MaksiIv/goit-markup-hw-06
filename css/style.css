@@ -794,22 +794,6 @@ img {
   border: 1px solid var(--accent-color);
 } */
 
-
-.form-terms {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--primary-text-color);
-    
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-
-.form-terms a {
-  text-decoration: underline;
-}
-
 .form-field textarea {
   height: 120px;
   padding: 12px 16px;
@@ -850,6 +834,54 @@ img {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
+}
+
+.form-terms {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primary-text-color);
+    
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.form-terms a {
+  text-decoration: underline;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+      -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+
+}
+
+.terms {
+  display: inline-flex;
+  align-items: center;
+}
+
+.terms:before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 7px;
+  
+  border: 2px solid var(--secondary-text-color);
+  border-radius: 1px;
+  
+}
+
+.checkbox:checked + .terms:before {
+  background-color: var(--accent-color);
+  background-image: url(../images/icon-checked.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
 }
 
 .button.submit {
